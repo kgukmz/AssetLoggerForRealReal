@@ -158,7 +158,10 @@ PlayerButtonRow:Button({
         end
 
         local Success, Error = pcall(function()
-            saveinstance(ScriptData.SelectedPlayer)
+	    if (ScriptData.SelectedPlayer.Character == nil) then
+		return
+            end
+            saveinstance(ScriptData.SelectedPlayer.Character)
         end)
         
         if (Success == false) then
