@@ -169,7 +169,7 @@ PlayerButtonRow:Button({
         end
 
         ModalNotify("Saved: " .. ScriptData.SelectedPlayer.Name .. " to workspace")
-        ConsoleLog("Successfuly saved:", ScriptData.SelectedPlayer.Name .. " to workspace")
+        ConsoleLog("Successfuly saved:", ScriptData.SelectedPlayer.Name .. " to workspace folder")
     end
 })
 
