@@ -151,16 +151,14 @@ PlayerButtonRow:Button({
             ModalNotify("Executor does not support saveinstance")
             return
         end
-
         if (ScriptData.SelectedPlayer == nil) then
             ModalNotify("No player has been selected")
             return
         end
-
         if (ScriptData.SelectedPlayer.Character == nil) then
             return
         end
-        
+    
         local Success, Error = pcall(function()
             saveinstance(ScriptData.SelectedPlayer.Character)
         end)
